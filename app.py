@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Load the pre-trained AdaBoost model from the pickle file
 model_path = "models\picklefile.pkl"
-with open(model_path, 'rb') as file:
+with open("models\picklefile.pkl", 'rb') as file:
     model = pickle.load(file)
 
 @app.route('/')
